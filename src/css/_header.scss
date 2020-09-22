@@ -1,0 +1,155 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.info{  
+    font-family: $font-main;
+    margin: 12% 10%;
+    width: 40%;
+
+    &-title{
+
+        font-weight: $light;
+        font-size: $large;
+        margin-bottom: -10px;
+        color: white;
+
+        &__last{
+            font-weight: $bold;
+        }
+    }
+
+    &-description{
+        font-family: $font-sub;
+        color: white;
+        font-size: $small;
+    }
+
+     &-nav{
+        font-family: $font-sub;
+        font-size: $small;
+        margin: 0 auto;
+
+         &__list{
+
+            list-style: none;
+            padding-left: 0;
+            
+            &__item{
+                
+                display: inline; 
+                
+                margin-right: 5rem;
+                color: white;
+
+                &:hover{
+                    color: $dark-color;
+                }
+
+            }
+
+        }
+
+     }
+
+     &-icons{
+         
+        color: white;
+        
+        &__item{
+            margin-right: 4rem;
+
+            &:hover{
+                color: $dark-color;
+            }
+        }
+     }
+}
+
+.picture{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    height: 75%;
+    max-height: 100%;
+    max-width: 50%;
+    pointer-events: none;
+}
+
+@media only screen and (max-width : 800px) {
+    
+    .info{  
+
+        font-family: $font-main;
+        margin: auto;
+        width: 90%;
+
+        &-title{
+            margin-top: 10%;
+            text-align: center;
+            font-size: $mobile-large;
+            font-weight: $light;
+            color: white;
+            margin-bottom: 10%;
+    
+            &__last{
+                font-weight: $bold;
+            }
+        }
+    
+        &-description{
+            text-align: center;
+            font-family: $font-sub;
+            color: white;
+            font-size: $mobile-small;
+        }
+    
+         &-nav{
+
+            margin: auto;
+            max-width: 99%;
+            text-align: center;
+            font-family: $font-sub;
+            font-size: $mobile-small;
+
+             &__list{
+
+                &__item{
+                    
+                    color: white;
+                    padding: 0px;
+                    margin: 24px;
+
+                    &:hover{
+                        color: $dark-color;
+                    }
+    
+                }
+    
+            }
+    
+         }
+    
+         &-icons{
+             
+            color: white;
+            
+            &__item{
+    
+                &:hover{
+                    color: $dark-color;
+                }
+            }
+            
+    
+         }
+    
+         
+    
+    }
+
+    .picture{
+        display: none;
+    }
+}

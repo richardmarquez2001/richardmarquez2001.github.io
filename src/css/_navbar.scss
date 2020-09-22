@@ -1,0 +1,45 @@
+.bar{ // div element
+    margin: 0 auto;
+    width: $container-width;
+    font-family: $font-main;
+    color: white;
+}
+
+.list{ //ul element
+     
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    font-size: $small;
+
+
+    &-name{ // li first item
+        &:hover{
+            color: $dark-color;
+        }
+        
+        display: inline;
+        float: left;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        font-weight: $bold;
+    }  
+
+    &-item{  // li rest of items
+
+        &:hover{
+            color: $dark-color;
+        }
+        
+        display: inline;
+        float: right;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+
+}

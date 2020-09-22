@@ -1,0 +1,68 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: $bg-color;
+}
+
+.container{
+    display: grid;
+    margin: 0 auto;
+    width: $container-width;
+    font-family: $font-main;
+    color: white;
+}
+
+.post{    
+
+    &:hover{
+        transform: skew(-0.5deg, -0.5deg);
+        transition-duration: 1s;
+    }
+
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+ 
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    
+    &-text{
+        vertical-align: middle;
+
+        &__title{   
+            font-weight: $bold;
+            font-size: $medium;
+            padding-bottom: 10px;
+            color: 	white;
+        }
+
+        &__description{
+            font-family: $font-sub;
+            font-weight: $normal;
+            font-size: $small;
+            margin-bottom: 20px;
+            color: white;
+            
+        }
+
+        &__button{
+           background-color: $dark-color;
+           border: none;
+           font-size: $small;
+           color: white;
+           font-family: $font-main;
+           font-weight: $normal;
+           padding: 0.5rem;
+
+           &:hover{
+                background-color: $medium-color;
+           }
+        
+        }
+    }
+
+    &-photo{
+        margin-left: 20px;
+        background-color: #aee;
+        max-width: 75%;
+    }
+}

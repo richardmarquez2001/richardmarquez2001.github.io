@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "https://richardmarquez2001.github.io/",
+  "homepage": "https://richardmarquez2001.github.io/website-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,8 +17,8 @@
     "sass": "^1.26.8"
   },
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

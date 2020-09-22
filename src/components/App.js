@@ -14,8 +14,6 @@ export default class App extends Component {
 				<BrowserRouter>
 				
 					<div>
-						<Route path = "/website-2" component = {Header} />
-
 						<Route path = "/" exact component = {Header} />
 						<Route path = "/projects" exact component = {Projects} />
 						<Route path = "/about" exact component = {About} />

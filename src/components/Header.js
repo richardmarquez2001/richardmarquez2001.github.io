@@ -27,7 +27,7 @@ export default class Header extends Component {
                             <Link to = "/projects"><li className="info-nav__list__item">Projects</li></Link>
                             <li className="info-nav__list__item"><a href = "mailto:richard.marquez.2001@gmail.com">Email Me</a></li>
                             <Link to = "/about"><li className="info-nav__list__item">About</li></Link>
-                            <li className="info-nav__list__item"><a href = "https://www.youtube.com/">Resume</a></li>
+                            <li className="info-nav__list__item"><a href = "https://drive.google.com/file/d/1VaAv3o0Yeveeq0CbH8NDlPaSRu1iQG_O/view?usp=sharing">Resume</a></li>
                         </ul>
                     </div>
 

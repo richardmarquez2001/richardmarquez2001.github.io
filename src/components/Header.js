@@ -47,13 +47,6 @@ export default class Header extends Component {
                             size = '3rem'
                             />
                         </a>
-                        
-                        <a href ="https://www.youtube.com/channel/UCiPWZTnHai219ClxBxlXbPA/">
-                            <AiFillYoutube 
-                            className = "info-icons__item"
-                            size = '3rem'
-                            />
-                        </a>
 
                     </div>
 

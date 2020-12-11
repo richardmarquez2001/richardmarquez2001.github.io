@@ -3,6 +3,7 @@
     width: $container-width;
     font-family: $font-main;
     color: white;
+    font-size: $small;
 }
 
 .list{ //ul element
@@ -10,7 +11,7 @@
     list-style-type: none;
     display: block;
     overflow: hidden;
-    padding: 0;
+    padding-top: 2vh;
     font-size: $small;
 
 
@@ -27,18 +28,54 @@
         font-weight: $bold;
     }  
 
-    &-item{  // li rest of items
+    &-right{
+        &__item{  // li rest of items
 
-        &:hover{
-            color: $dark-color;
+            &:hover{
+                color: $dark-color;
+            }
+            
+            display: inline;
+            float: right;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            
         }
-        
-        display: inline;
-        float: right;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    }
+    
+
+}
+
+@media only screen and (max-width : 800px){
+
+    .bar{
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0px;
+        font-size: $small;
+    }
+    
+    .list{
+        padding-left: 0px;
+        padding-right: 0px;
+        &-right{
+            display: flex;
+            a{
+                padding: 0px;
+                margin: 0px;
+            }
+            padding-right: 5%;
+            &__item{ 
+                flex: 1;
+                flex-direction: flex-end;
+                padding: 10px;
+                color: red;
+                
+            }
+        }
         
     }
 

@@ -4,17 +4,25 @@ import Navbar from './Navbar'
 import Image1 from "../img/pixelit.png"
 import Image2 from "../img/pfp.jpg" 
 import Image3 from "../img/ric_img.png"
-
+import Image4 from "../img/link-up.png";
 export default class Projects extends Component {
 	render() {
 		return (
 			<div>
                <Navbar />
-                
+               <div class = "projcontainer">
+               <Post 
+                  title="Link Up" 
+                  description= "This was my term project for my web development class. This project is a simple match making application, where you can meet new people who have similar interests with you. Check it out!"
+                  button="Visit here" 
+                  color="#dee" 
+                  image =   {Image4}
+                  redirect = "https://link-up-101.000webhostapp.com/pages/home.php"
+               />
                <Post 
                   title="Safe Space" 
                   description= "This project was meant to solve crime within the city, and report any crimes in the downtown area. This way people will know about high crime areas in Toronto. Placed first out of over 300 teams for best use of Google Cloud's API at BrickHacks 2020. Check it out!"
-                  button="View here" 
+                  button="Visit here" 
                   color="#dee" 
                   image =   {Image3}
                   redirect = "http://makethisasafe.space/"
@@ -37,7 +45,7 @@ export default class Projects extends Component {
                      image = {Image2}
                      redirect = "https://github.com/richardmarquez2001/deltahacksapp"
                />
-
+            </div>
             </div>
 		);
 	}

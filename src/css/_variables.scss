@@ -16,9 +16,9 @@ $medium-color: #c1a151;
 $bg-color: #a89668;
 
 // Font sizes
-$large: 72px;
-$medium: 56px;
-$small: 20px;
+$large: calc((.4em + 2vmin) + (.4em + 2vmax));
+$medium: calc((.4em + 0.5vmin) + (.4em + 0.5vmax));
+$small: calc((.4em + 0.25vmin) + (.4em + 0.25vmax));
 
 // Other
 $container-width: 70%;

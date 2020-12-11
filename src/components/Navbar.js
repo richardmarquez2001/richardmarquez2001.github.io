@@ -9,10 +9,14 @@ export default class Navbar extends Component{
          <div className = "bar">
 
              <ul className = "list">
+             
                  <Link to = "/"><li className = "list-name">Richard Marquez</li></Link>
-                 <Link to = "/projects"><li className = "list-item">Projects</li></Link>
-                 <Link to = "/about"><li className = "list-item">About</li></Link>
-                 <a href = "mailto:richard.marquez.2001@gmail.com"><li className = "list-item">Contact</li></a>
+
+                 <div className="list-right">
+                    <a href = "mailto:richard.marquez.2001@gmail.com"><li className = "list-right__item">Resume</li></a><br />
+                    <Link to = "/about"><li className = "list-right__item">About</li></Link><br />
+                    <Link to = "/projects"><li className = "list-right__item">Projects</li></Link>
+                 </div>
              </ul>
 
          </div>

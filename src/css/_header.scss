@@ -1,11 +1,15 @@
 a{
+    &:hover{
+        color: $dark-color;
+        text-decoration: none;
+    }
     text-decoration: none;
     color: inherit;
 }
 
 .info{  
     font-family: $font-main;
-    margin: 12% 10%;
+    margin: 12% 7% 0%;
     width: 40%;
 
     &-title{
@@ -24,12 +28,14 @@ a{
         font-family: $font-sub;
         color: white;
         font-size: $small;
+        padding-bottom: 1em;
     }
 
      &-nav{
         font-family: $font-sub;
         font-size: $small;
         margin: 0 auto;
+        padding-bottom: 1em;
 
          &__list{
 
@@ -82,12 +88,14 @@ a{
     .info{  
 
         font-family: $font-main;
-        margin: auto;
-        width: 90%;
+        padding: 40% 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: fill;
 
         &-title{
             margin-top: 10%;
-            text-align: center;
+            text-align: left;
             font-size: $mobile-large;
             font-weight: $light;
             color: white;
@@ -99,27 +107,25 @@ a{
         }
     
         &-description{
-            text-align: center;
+            text-align: left;
             font-family: $font-sub;
             color: white;
             font-size: $mobile-small;
         }
     
          &-nav{
-
             margin: auto;
             max-width: 99%;
-            text-align: center;
+            text-align: left;
             font-family: $font-sub;
             font-size: $mobile-small;
 
              &__list{
 
                 &__item{
-                    
                     color: white;
                     padding: 0px;
-                    margin: 24px;
+                    margin-right: 2.1em;
 
                     &:hover{
                         color: $dark-color;
@@ -132,11 +138,12 @@ a{
          }
     
          &-icons{
-             
+            width: 100%;
             color: white;
             
             &__item{
-    
+                padding-right: none;
+                margin-right: none;
                 &:hover{
                     color: $dark-color;
                 }
@@ -144,12 +151,10 @@ a{
             
     
          }
-    
-         
-    
     }
 
     .picture{
         display: none;
     }
 }
+

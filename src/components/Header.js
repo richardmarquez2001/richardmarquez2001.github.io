@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Image from '../img/ric_og.png';
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
@@ -25,7 +25,6 @@ export default class Header extends Component {
                     <div className="info-nav">
                         <ul className="info-nav__list">
                             <Link to = "/projects"><li className="info-nav__list__item">Projects</li></Link>
-                            <li className="info-nav__list__item"><a href = "mailto:richard.marquez.2001@gmail.com">Email Me</a></li>
                             <Link to = "/about"><li className="info-nav__list__item">About</li></Link>
                             <li className="info-nav__list__item"><a href = "https://drive.google.com/file/d/1LNPLZ66WfB_bT0QPk_TvW9sNtsTuO7Tb/view?usp=sharing">Resume</a></li>
                         </ul>
@@ -48,6 +47,13 @@ export default class Header extends Component {
                             />
                         </a>
 
+                        <a href ="mailto:richard.marquez.2001@gmail.com">
+                            <AiFillMail
+                            className = "info-icons__item"
+                            size = '3rem'
+                            />
+                        </a>
+                        
                     </div>
 
                 </div>

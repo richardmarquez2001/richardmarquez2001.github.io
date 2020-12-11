@@ -48,7 +48,7 @@
 
 }
 
-@media only screen and (max-width : 800px){
+@media only screen and (max-width:480px){
 
     .bar{
         width: 100%;
@@ -59,21 +59,62 @@
     }
     
     .list{
+
         padding-left: 0px;
         padding-right: 0px;
         &-right{
             display: flex;
+            
             a{
                 padding: 0px;
                 margin: 0px;
             }
             padding-right: 5%;
             &__item{ 
+                font-size: $navbar-small;
                 flex: 1;
                 flex-direction: flex-end;
-                padding: 10px;
-                color: red;
-                
+                padding-top: 1rem;
+                padding-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        
+    }
+
+}
+
+@media only screen and (max-width:768px){
+
+    .bar{
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0px;
+        font-size: $small;
+    }
+    
+    .list{
+
+        padding-left: 0px;
+        padding-right: 10px;
+        &-right{
+            display: flex;
+            float: right;
+            a{
+                padding: 0px;
+                margin: 0px;
+            }
+            padding-right: 5%;
+            &__item{ 
+                font-size: $navbar-small;
+                flex: 1;
+                flex-direction: flex-end;
+                padding-top: 1rem;
+                padding-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
         

@@ -7,6 +7,10 @@ a{
     color: inherit;
 }
 
+.colr{
+    color: $dark-color;
+}
+
 .info{  
     font-family: $font-main;
     margin: 12% 7% 0%;
@@ -78,8 +82,6 @@ a{
     bottom: 0px;
     left: 50%;
     height: 75%;
-    max-height: 100%;
-    max-width: 50%;
     pointer-events: none;
 }
 
@@ -88,18 +90,18 @@ a{
     .info{  
 
         font-family: $font-main;
-        padding: 40% 0px;
+        padding: 2  0% 0px;
         margin-left: 5%;
         margin-right: 5%;
         width: fill;
 
         &-title{
-            margin-top: 10%;
+            margin-top: 40%;
             text-align: left;
             font-size: $mobile-large;
             font-weight: $light;
             color: white;
-            margin-bottom: 10%;
+            margin-bottom: 5px;
     
             &__last{
                 font-weight: $bold;

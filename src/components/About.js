@@ -27,11 +27,13 @@ export default class About extends Component {
 						About <span className = "info-title__last">Me</span>
 					</div>
 
-
+					<br></br>
 					<div className = "info-description">
 						<p>
-						Hello! I'm Richard Marquez, I'm {getAge()} years old and I'm going to my second year of Computer Science at Ryerson University, which is located in 
-						the heart of Toronto, Canada.
+						Hello! I'm Richard Marquez, I'm {getAge()} years old and I'm in my second year of Computer Science at Ryerson University.<br/><br/>
+						Currently, I'm seeking 2021 Summer Co-op positions in web development, or general software engineering. <br/><br/>
+						Also, I'm the <a className = "colr" href="https://dsc.community.dev/ryerson-university/">Developer Student Club</a> Lead at Ryerson for the 2020-2021 school year. 
+						
 						</p>
 					</div>
             

@@ -30,9 +30,11 @@
 
     &-right{
         &__item{  // li rest of items
-
-            &:hover{
-                color: $dark-color;
+            display: flex;
+            float: right;
+            a{
+                padding: 0px;
+                margin: 0px;
             }
             
             display: inline;
